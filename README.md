@@ -29,7 +29,7 @@ install.packages("ggdark") # Plotting themes
 ## Apresentação da análise
 
 O código foi dividido em três partes:
-- Spotify Mining: extração dos dados de Spotify Charts, manipulação do dataframe e extração das informações sobre as músicas através do API do Spotify
+- Spotify Scraping: extração dos dados de Spotify Charts, manipulação do dataframe e extração das informações sobre as músicas através do API do Spotify
 - Spotify Objective Analysis: análise sobre características objetivas das músicas, tais como posição no Top 200, tom, modo, duração, BPM, etc.
 - Spotify Subjective Analysis: curta análise sobre características subjetivas das músicas, tais como dançabilidade, energia, acusticidade, etc.
 

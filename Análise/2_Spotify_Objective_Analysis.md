@@ -1,7 +1,5 @@
-Análise das paradas musicais Top 200 do Spotify para o mercado
-brasileiro (Parte 2 - Spotify Objective Analysis)
-================
-Rodrigo Bercini Martins
+# Análise das paradas musicais Top 200 do Spotify para o mercado brasileiro 
+# Parte 2 - Spotify Objective Analysis
 
 ### Top 20 músicas por número total de streams em 2019
 

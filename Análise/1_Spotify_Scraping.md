@@ -1,4 +1,5 @@
-# Análise das paradas musicais Top 200 do Spotify para o mercado brasileiro (Parte 1 - Spotify Scraping)
+# Análise das paradas musicais Top 200 do Spotify para o mercado brasileiro
+# Parte 1 - Spotify Scraping
 
 ### Preparação do ambiente
 

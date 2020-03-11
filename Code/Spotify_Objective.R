@@ -108,13 +108,13 @@ length <- df %>%
   summarise(count= n(),
             artist=unique(artist_name),
             total_streams_millions= sum(streams)/1000000,
-            length_ms=unique(duration_ms)/1000,
+            length_s=unique(duration_ms)/1000,
             mode_name = unique(mode_name)) %>%
-  arrange(desc(length_ms))
+  arrange(desc(length_s))
 head(duration)
 
-length$minutes <- (length$length_ms %/% 60)
-length$seconds <- (length$length_ms %% 60)
+length$minutes <- (length$length_s %/% 60)
+length$seconds <- (length$length_s %% 60)
 length$min_sec <- paste(length$minutes, 'min',round(length$seconds),'s')
 
 length
@@ -126,7 +126,7 @@ colnames(length_clean) <- c('Track_Name', 'Artist', 'Length(ms)', 'Total_Streams
 as.data.frame(head(length_clean,20))
 
 # Plotting Length vs Total Streams coloured by Mode (major or minor)
-ggplot(length, aes(x=length_ms, y=total_streams_millions, colour=mode_name)) +
+ggplot(length, aes(x=length_s, y=total_streams_millions, colour=mode_name)) +
   geom_point() + dark_theme_gray()+
   scale_x_continuous(breaks = seq(50, 600, 50)) +
-  labs(x='Length(ms)', y='Total Streams (Millions)', title='Songs in TOP 200 are about 100~250 ms long')
+  labs(x='Length(sec)', y='Total Streams (Millions)', title='Songs in TOP 200 are about 100~250 seconds long')

@@ -9,13 +9,6 @@ library(ggplot2) # Plotting
 library(ggdark) # Plotting themes
 
 
-install.packages('NCmisc')
-library(NCmisc)
-list.functions.in.file('Spotify_Mining.R', alphabetic = TRUE)
-list.functions.in.file('Spotify_Objective.R', alphabetic = TRUE)
-list.functions.in.file('Spotify_Subjective.R', alphabetic = TRUE)
-
-
 # Get start and end date
 start_date <- as.Date("2019/01/01")
 end_date <- as.Date("2019/12/31")

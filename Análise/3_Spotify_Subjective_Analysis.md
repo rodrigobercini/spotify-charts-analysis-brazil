@@ -1,6 +1,5 @@
-Análise das paradas musicais Top 200 do Spotify para o mercado
-brasileiro
-================
+# Análise das paradas musicais Top 200 do Spotify para o mercado brasileiro
+# Parte 3 - Spotify Subjective Analysis
 
 ## Análise de características subjetivas
 

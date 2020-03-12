@@ -1,5 +1,13 @@
 df <- read.csv('df_final.csv')
 
+library(dplyr) # DF manipulation
+library(readr) # Fil reading
+library(stringr) # For string manpulation
+library(spotifyr) # Allows for extracting metadata for songs
+library(ggplot2) # Plotting
+library(ggdark) # Plotting themes
+
+
 ######################
 # Top 20 songs
 ######################

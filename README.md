@@ -7,7 +7,7 @@ O Spotify é o serviço de streaming mais popular do ocidente, com mais de [270 
 
 A empresa disponibiliza em [Spotify Charts](https://spotifycharts.com/) dados diários e semanais das 200 músicas com mais streams, permitindo filtrar por região.
 
-Este repositório consolida os dados diários de 2019, ou seja, extrai o Top 200 de todos os dias de 2019 e os converte em um único dataframe contendo as músicas, suas estatísticas de acesso e suas características técnicas e subjetivas (BPM, duração, tom, modo, dançabilidade, etc.)
+Este repositório consolida os dados diários de 2019 para o mercado brasileiro, ou seja, extrai o Top 200 de todos os dias de 2019 e os converte em um único dataframe contendo as músicas, suas estatísticas de acesso e suas características técnicas e subjetivas (BPM, duração, tom, modo, dançabilidade, etc.)
 
 ## Inspirações
 

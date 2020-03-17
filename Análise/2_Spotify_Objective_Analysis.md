@@ -223,7 +223,7 @@ pl <- ggplot(key_mode_count, aes(x=reorder(key_mode, -total_streams_millions, su
 pl
 ```
 
-![](2_Spotify_Objective_files/figure-gfm/key__mode-1.png)<!-- -->
+![](2_Spotify_Objective_Analysis_files/figure-gfm/key__mode-1.png)<!-- -->
 
 O gráfico abaixo mostra que os tons C\#, C e D são majoritariamente
 maiores, enquanto F\#, B e F a relação maior/menor é mais equilibrada.
@@ -248,7 +248,7 @@ pl <- ggplot(key, aes(x=reorder(key_name, -total_streams_millions, sum), y=total
 pl
 ```
 
-![](2_Spotify_Objective_files/figure-gfm/key__plot-1.png)<!-- -->
+![](2_Spotify_Objective_Analysis_files/figure-gfm/key__plot-1.png)<!-- -->
 
 Considerando cada ponto como uma música, é possível visualizar a
 disposição individual de tom vs número de streams.
@@ -273,7 +273,7 @@ pl <- ggplot(key, aes(x=reorder(key_name, -total_streams_millions, sum), y=total
 pl
 ```
 
-![](2_Spotify_Objective_files/figure-gfm/key__plot2-1.png)<!-- -->
+![](2_Spotify_Objective_Analysis_files/figure-gfm/key__plot2-1.png)<!-- -->
 
 Apesar de haverem diversas músicas em tom menor com sucesso, o tom maior
 geralmente é mais ouvido.
@@ -302,7 +302,7 @@ pl <- ggplot(key, aes(y=total_streams_millions, x=mode_name, colour= mode_name))
 pl
 ```
 
-![](2_Spotify_Objective_files/figure-gfm/mode__plot-1.png)<!-- -->
+![](2_Spotify_Objective_Analysis_files/figure-gfm/mode__plot-1.png)<!-- -->
 
 ### Duração
 
@@ -378,4 +378,4 @@ as.data.frame(head(length_clean,20))
 pl
 ```
 
-![](2_Spotify_Objective_files/figure-gfm/duration_-1.png)<!-- -->
+![](2_Spotify_Objective_Analysis_files/figure-gfm/duration_-1.png)<!-- -->

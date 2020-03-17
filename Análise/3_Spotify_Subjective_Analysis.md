@@ -94,7 +94,7 @@ pl
 
     ## `geom_smooth()` using method = 'gam' and formula 'y ~ s(x, bs = "cs")'
 
-![](3_Spotify_Subjective_files/figure-gfm/energy_plot-1.png)<!-- -->
+![](3_Spotify_Subjective_Analysis_files/figure-gfm/energy_plot-1.png)<!-- -->
 
 ### Dançabilidade
 
@@ -173,7 +173,7 @@ pl
 
     ## `geom_smooth()` using method = 'gam' and formula 'y ~ s(x, bs = "cs")'
 
-![](3_Spotify_Subjective_files/figure-gfm/dance_plot-1.png)<!-- -->
+![](3_Spotify_Subjective_Analysis_files/figure-gfm/dance_plot-1.png)<!-- -->
 
 ### BPM
 
@@ -250,7 +250,7 @@ pl
 
     ## `geom_smooth()` using method = 'gam' and formula 'y ~ s(x, bs = "cs")'
 
-![](3_Spotify_Subjective_files/figure-gfm/BPM_plot-1.png)<!-- -->
+![](3_Spotify_Subjective_Analysis_files/figure-gfm/BPM_plot-1.png)<!-- -->
 
 ### “Liveness”
 
@@ -328,7 +328,7 @@ pl
 
     ## `geom_smooth()` using method = 'gam' and formula 'y ~ s(x, bs = "cs")'
 
-![](3_Spotify_Subjective_files/figure-gfm/key__plot-1.png)<!-- -->
+![](3_Spotify_Subjective_Analysis_files/figure-gfm/key__plot-1.png)<!-- -->
 
 ### Instrumentalidade
 
@@ -405,4 +405,4 @@ pl
 
     ## `geom_smooth()` using method = 'gam' and formula 'y ~ s(x, bs = "cs")'
 
-![](3_Spotify_Subjective_files/figure-gfm/instrument_plot-1.png)<!-- -->
+![](3_Spotify_Subjective_Analysis_files/figure-gfm/instrument_plot-1.png)<!-- -->

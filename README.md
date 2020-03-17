@@ -40,10 +40,10 @@ O código foi dividido em três partes:
 Abaixo é possível conferir algumas características básicas do mercado musical brasileiro.
 
 
-![Tom e Modo](https://github.com/rodrigobercini/spotify-charts-analysis-brazil/raw/master/An%C3%A1lise/2_Spotify_Objective_files/figure-gfm/key__plot-1.png)
+![Tom e Modo](https://github.com/rodrigobercini/spotify-charts-analysis-brazil/raw/master/An%C3%A1lise/2_Spotify_Objective_Analysis_files/figure-gfm/key__plot-1.png)
 
-![Tom e Streams](https://github.com/rodrigobercini/spotify-charts-analysis-brazil/raw/master/An%C3%A1lise/2_Spotify_Objective_files/figure-gfm/key__plot2-1.png)
+![Tom e Streams](https://github.com/rodrigobercini/spotify-charts-analysis-brazil/raw/master/An%C3%A1lise/2_Spotify_Objective_Analysis_files/figure-gfm/key__plot2-1.png)
 
-![Duração](https://github.com/rodrigobercini/spotify-charts-analysis-brazil/raw/master/An%C3%A1lise/2_Spotify_Objective_files/figure-gfm/duration_-1.png)
+![Duração](https://github.com/rodrigobercini/spotify-charts-analysis-brazil/raw/master/An%C3%A1lise/2_Spotify_Objective_Analysis_files/figure-gfm/duration_-1.png)
 
-![Energia](https://github.com/rodrigobercini/spotify-charts-analysis-brazil/raw/master/An%C3%A1lise/3_Spotify_Subjective_files/figure-gfm/energy_plot-1.png)
+![Energia](https://github.com/rodrigobercini/spotify-charts-analysis-brazil/raw/master/An%C3%A1lise/3_Spotify_Subjective_Analysis_files/figure-gfm/energy_plot-1.png)

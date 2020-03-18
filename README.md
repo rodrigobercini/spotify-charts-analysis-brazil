@@ -28,17 +28,18 @@ install.packages("ggdark") # Plotting themes
 
 ## Apresentação da análise
 
-O código foi dividido em três partes:
-- Spotify Scraping: extração dos dados de Spotify Charts, manipulação do dataframe e extração das informações sobre as músicas através do API do Spotify
-- Spotify Objective Analysis: análise sobre características objetivas das músicas, tais como posição no Top 200, tom, modo, duração, BPM, etc.
-- Spotify Subjective Analysis: curta análise sobre características subjetivas das músicas, tais como dançabilidade, energia, acusticidade, etc.
+A análise foi dividida em três partes (arquivo markdown):
+- [Spotify Scraping](https://github.com/rodrigobercini/spotify-charts-analysis-brazil/blob/master/An%C3%A1lise/1_Spotify_Scraping.md): extração dos dados de Spotify Charts, manipulação do dataframe e extração das informações sobre as músicas através do API do Spotify
+- [Spotify Objective Analysis](https://github.com/rodrigobercini/spotify-charts-analysis-brazil/blob/master/An%C3%A1lise/2_Spotify_Objective_Analysis.md): análise sobre características objetivas das músicas, tais como posição no Top 200, tom, modo, duração, BPM, etc.
+- [Spotify Subjective Analysis](https://github.com/rodrigobercini/spotify-charts-analysis-brazil/blob/master/An%C3%A1lise/3_Spotify_Subjective_Analysis.md): curta análise sobre características subjetivas das músicas, tais como dançabilidade, energia, acusticidade, etc.
+
+Confira o diretório [Código](https://github.com/rodrigobercini/spotify-charts-analysis-brazil/tree/master/C%C3%B3digo) para o código completo.
 
 ## Principais resultados
 
 É muito difícil um fator ser completamente determinante para o sucesso de uma música, sendo este o resultado de diversas variáveis, muitas delas dificilmente quantificáveis, como fatores culturais, estratégias de marketing, tendências locais, etc.
 
-Abaixo é possível conferir algumas características básicas do mercado musical brasileiro.
-
+De qualquer forma, a análise nos permite verificar algumas das principais tendências do mercado musical brasileiro. Abaixo é possível conferir gráficos gerados.
 
 ![Tom e Modo](https://github.com/rodrigobercini/spotify-charts-analysis-brazil/raw/master/An%C3%A1lise/2_Spotify_Objective_Analysis_files/figure-gfm/key__plot-1.png)
 

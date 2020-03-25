@@ -63,4 +63,4 @@ Abaixo, é possível ver que eles não se saíram melhores do que a previsão po
 
 Dois são os motivos para um resultado tão pífio:
 1) Pequena amostra: o dataframe de teste continha menos de 300 linhas, o que dificulta a previsão pelos modelos;
-2) A baixa explicabilidade do sucesso das músicas pelos parâmetros, fato que já havia sido constatado na [análise subjetiva](https://github.com/rodrigobercini/spotify-charts-analysis-brazil/blob/master/An%C3%A1lise/3_Spotify_Subjective_Analysis.md).
+2) A baixa explicabilidade da popularidade das músicas pelos parâmetros obtidos pelo API, o que já havia sido constatado na [análise subjetiva](https://github.com/rodrigobercini/spotify-charts-analysis-brazil/blob/master/An%C3%A1lise/3_Spotify_Subjective_Analysis.md).

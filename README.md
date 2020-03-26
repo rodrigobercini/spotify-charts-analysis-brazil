@@ -9,7 +9,7 @@ A empresa disponibiliza em [Spotify Charts](https://spotifycharts.com/) dados di
 
 Este repositório consolida os dados diários de 2019 para o mercado brasileiro, ou seja, extrai o Top 200 de todos os dias de 2019 e os converte em um único dataframe contendo as músicas, suas estatísticas de acesso e suas características técnicas e subjetivas (BPM, duração, tom, modo, dançabilidade, etc.).
 
-Também é feita uma rápida modelagem de previsões para o parâmetro Popularidade.  Os resultados se mostraram iguais ou piores à previsão por média, com conversão dos modelos à mesma.
+Também foi feita uma rápida modelagem de previsões para o parâmetro Popularidade. Os resultados se mostraram iguais ou piores à previsão por média, com conversão dos modelos à mesma.
 
 ## Inspirações
 
@@ -35,7 +35,19 @@ A análise foi dividida em três partes (arquivo markdown):
 - [Spotify Objective Analysis](https://github.com/rodrigobercini/spotify-charts-analysis-brazil/blob/master/An%C3%A1lise/2_Spotify_Objective_Analysis.md): análise sobre características objetivas das músicas, tais como posição no Top 200, tom, modo, duração, BPM, etc.
 - [Spotify Subjective Analysis](https://github.com/rodrigobercini/spotify-charts-analysis-brazil/blob/master/An%C3%A1lise/3_Spotify_Subjective_Analysis.md): curta análise sobre características subjetivas das músicas, tais como dançabilidade, energia, acusticidade, etc.
 
-Confira o diretório [Código](https://github.com/rodrigobercini/spotify-charts-analysis-brazil/tree/master/C%C3%B3digo) para o código completo.
+## Previsão de popularidade
+
+Foram utilizados modelos de Redes Neurais Artificiais (ANN), regressão linear (LM), support vector machines (SVM) e floresta aleatória (RF) para prever a popularidade das músicas. Os modelos estão disponíveis na pasta [Modelos](https://github.com/rodrigobercini/spotify-charts-analysis-brazil/tree/master/Modelos), porém os resultados não são 100% reproduzíveis já que a divisão amostral é aleatória.
+
+A popularidade foi regressada contra todos os parâmetros numéricos disponíveis na API do Spotify, e p estimador utilizado foi o Erro Quadrático Médio [Mean Squared Error](https://en.wikipedia.org/wiki/Mean_squared_error). Abaixo, é possível ver que os modelos não se saíram melhores do que a previsão por média. Apenas o de redes neurais teve um resultado similar, porém justamente pelo fato do modelo começar a convergir as previsões para a média.
+
+|     | Mean | ANN |  LM | SVM | RF  |
+|:---:|:----:|:---:|:---:|:---:|-----|
+| MSE |  398 | 396 | 413 | 415 | 427 |
+
+Dois são os motivos para um resultado tão pífio:
+1) Pequena amostra: o dataframe de teste continha menos de 300 linhas, o que dificulta a previsão pelos modelos;
+2) A baixa explicabilidade da popularidade das músicas pelos parâmetros obtidos pelo API, o que já havia sido constatado na [análise subjetiva](https://github.com/rodrigobercini/spotify-charts-analysis-brazil/blob/master/An%C3%A1lise/3_Spotify_Subjective_Analysis.md).
 
 ## Principais resultados
 
@@ -50,17 +62,3 @@ De qualquer forma, a análise nos permite verificar algumas das principais tend�
 ![Duração](https://github.com/rodrigobercini/spotify-charts-analysis-brazil/raw/master/An%C3%A1lise/2_Spotify_Objective_Analysis_files/figure-gfm/duration_-1.png)
 
 ![Energia](https://github.com/rodrigobercini/spotify-charts-analysis-brazil/raw/master/An%C3%A1lise/3_Spotify_Subjective_Analysis_files/figure-gfm/energy_plot-1.png)
-
-## Previsão de popularidade
-
-Foram utilizados modelos de Redes Neurais Artificiais (ANN), regressão linear (LM), support vector machines (SVM) e floresta aleatória (RF) para prever a popularidade das músicas. Os modelos estão disponíveis na pasta [Modelos](https://github.com/rodrigobercini/spotify-charts-analysis-brazil/tree/master/Modelos), porém os resultados não são 100% reproduzíveis já que a divisão amostral é aleatória.
-
-A popularidade foi regressada contra todos os parâmetros numéricos disponíveis na API do Spotify, e p estimador utilizado foi o Erro Quadrático Médio [Mean Squared Error](https://en.wikipedia.org/wiki/Mean_squared_error). Abaixo, é possível ver que os modelos não se saíram melhores do que a previsão por média. Apenas o de redes neurais teve um resultado similar, porém justamente pelo fato do modelo começar a convergir as previsões para a média.
-
-|     | Mean | ANN |  LM | SVM | RF  |
-|:---:|:----:|:---:|:---:|:---:|-----|
-| MSE |  398 | 396 | 413 | 415 | 427 |
-
-Dois são os motivos para um resultado tão pífio:
-1) Pequena amostra: o dataframe de teste continha menos de 300 linhas, o que dificulta a previsão pelos modelos;
-2) A baixa explicabilidade da popularidade das músicas pelos parâmetros obtidos pelo API, o que já havia sido constatado na [análise subjetiva](https://github.com/rodrigobercini/spotify-charts-analysis-brazil/blob/master/An%C3%A1lise/3_Spotify_Subjective_Analysis.md).

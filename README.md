@@ -53,9 +53,9 @@ De qualquer forma, a análise nos permite verificar algumas das principais tend�
 
 ## Previsão de popularidade
 
-Foram utilizados modelos de Redes Neurais Artificiais (ANN), regressão linear (LM), support vector machines (SVM) e floresta aleatória (RF). Os modelos estão disponíveis na pasta [Modelos](https://github.com/rodrigobercini/spotify-charts-analysis-brazil/tree/master/Modelos), porém os resultados não são 100% reproduzíveis já que a divisão amostral é aleatória.
+Foram utilizados modelos de Redes Neurais Artificiais (ANN), regressão linear (LM), support vector machines (SVM) e floresta aleatória (RF) para prever a popularidade das músicas. Os modelos estão disponíveis na pasta [Modelos](https://github.com/rodrigobercini/spotify-charts-analysis-brazil/tree/master/Modelos), porém os resultados não são 100% reproduzíveis já que a divisão amostral é aleatória.
 
-Abaixo, é possível ver que eles não se saíram melhores do que a previsão por média. Apenas o de redes neurais teve um resultado similar, porém justamente pelo fato do modelo começar a convergir as previsões para a média.
+A popularidade foi regressada contra todos os parâmetros numéricos disponíveis na API do Spotify, e p estimador utilizado foi o Erro Quadrático Médio [Mean Squared Error](https://en.wikipedia.org/wiki/Mean_squared_error). Abaixo, é possível ver que os modelos não se saíram melhores do que a previsão por média. Apenas o de redes neurais teve um resultado similar, porém justamente pelo fato do modelo começar a convergir as previsões para a média.
 
 |     | Mean | ANN |  LM | SVM | RF  |
 |:---:|:----:|:---:|:---:|:---:|-----|
